@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-style": ["error", "last"],
+    "computed-property-spacing": [
+      "error",
+      "never",
+      { "enforceForClassMembers": true }
+    ],
+    "eol-last": ["error", "always"],
+    "func-call-spacing": "error",
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "semi": ["error", "never"],
+    "semi-spacing": ["error", { "before": false, "after": true }],
+    "space-before-blocks": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "eqeqeq": "error"
+  }
+}
