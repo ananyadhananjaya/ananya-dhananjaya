@@ -1,6 +1,6 @@
 import { createAppConfig } from '../helpers/create-app-config'
 
-export const mailAppConfig = createAppConfig({
+export const emailAppConfig = createAppConfig({
   title: 'Mail',
   resizable: true
 })
