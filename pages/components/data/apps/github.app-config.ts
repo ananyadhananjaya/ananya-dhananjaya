@@ -1,6 +1,6 @@
 import { createAppConfig } from '../helpers/create-app-config'
 
-export const twitterAppConfig = createAppConfig({
-  title: 'Twitter',
+export const viewSourceAppConfig = createAppConfig({
+  title: 'Github',
   resizable: true
 })
