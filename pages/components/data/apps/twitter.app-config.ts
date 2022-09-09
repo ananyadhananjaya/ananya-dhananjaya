@@ -1,6 +1,6 @@
 import { createAppConfig } from '../helpers/create-app-config'
 
-export const safariAppConfig = createAppConfig({
+export const twitterAppConfig = createAppConfig({
   title: 'Safari',
   resizable: true
 })
