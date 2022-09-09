@@ -1,7 +1,7 @@
 import { createAppConfig } from '../helpers/create-app-config'
 
-export const calculatorAppConfig = createAppConfig({
-  title: 'Calculator',
+export const homeAppConfig = createAppConfig({
+  title: 'Home',
 
   expandable: true,
   resizable: false,

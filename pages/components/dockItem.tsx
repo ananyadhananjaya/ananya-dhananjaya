@@ -25,6 +25,7 @@ export function DockItem({ title = 'hello', mouseX, appID }: props) {
 
   return (
     <button aria-label={`Launch ${title}`} className={styles.dockItemButton}>
+      <p className={styles.tooltip}>{title}</p>
       <motion.span>
         <motion.img
           ref={imgRef}
