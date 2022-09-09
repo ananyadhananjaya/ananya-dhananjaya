@@ -1,6 +1,6 @@
 import { createAppConfig } from '../helpers/create-app-config'
 
-export const vscodeAppConfig = createAppConfig({
+export const emailAppConfig = createAppConfig({
   title: 'VSCode',
   resizable: true,
 
