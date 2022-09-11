@@ -18,14 +18,18 @@
     display: flex;
     place-items: center;
   }
+  &:hover{
+    cursor: pointer;
+  }
 
   .tooltip {
 
     white-space: nowrap;
 
     position: absolute;
-    top: -165%;
+    top: -155%;
     left: 20%;
+    border: 2px;
 
     padding: 0rem 0.75rem;
 

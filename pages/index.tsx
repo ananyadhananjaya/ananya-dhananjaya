@@ -43,7 +43,7 @@ function App() {
                 key={appID}
                 mouseX={mouseX}
                 appID={appID}
-                title={appID}
+                title={appsConfig[appID].title}
               />
             </div>
           ))}

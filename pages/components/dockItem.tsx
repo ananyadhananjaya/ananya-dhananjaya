@@ -10,6 +10,7 @@ import useRaf from '@rooks/use-raf'
 
 import { useRef, useState } from 'react'
 import styles from '../../styles/DockItem.module.scss'
+import Link from 'next/link'
 
 interface props {
   mouseX: MotionValue<number | null>
@@ -24,16 +25,18 @@ export function DockItem({ title = 'hello', mouseX, appID }: props) {
   const { width } = useDockHoverAnimation(mouseX, imgRef)
 
   return (
-    <button aria-label={`Launch ${title}`} className={styles.dockItemButton}>
+    <button className={styles.dockItemButton}>
       <p className={styles.tooltip}>{title}</p>
       <motion.span>
-        <motion.img
-          ref={imgRef}
-          src={`/app-icons/${appID}/256.png`}
-          draggable={false}
-          style={{ width }}
-          alt={`${title} app icon`}
-        />
+        <Link href={`/${title}`}>
+          <motion.img
+            ref={imgRef}
+            src={`/app-icons/${appID}/256.png`}
+            draggable={false}
+            style={{ width }}
+            alt={`${title} app icon`}
+          />
+        </Link>
       </motion.span>
     </button>
   )
