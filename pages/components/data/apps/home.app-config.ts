@@ -2,7 +2,7 @@ import { createAppConfig } from '../helpers/create-app-config'
 
 export const homeAppConfig = createAppConfig({
   title: 'Home',
-
+  link: 'home',
   expandable: true,
   resizable: false,
 

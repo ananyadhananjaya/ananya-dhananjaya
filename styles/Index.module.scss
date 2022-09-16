@@ -60,15 +60,15 @@
 
 .header::after {
   animation: type 7s infinite;
-  color: rgb(63, 63, 63); 
-  font-family: "Courier";
-  font-size: 28px;
+  color:  rgb(100 116 139); 
+  font-family: "Verdana";
+  font-size: 25px;
   content: "Frontend Engineer";
 }
 
 @keyframes type{ 
-   10% {opacity: 1; content: "Frontend Engineer";}
+   10% {opacity: .8; content: "Frontend Engineer";}
    25% {opacity: 0;}
-   60% {opacity: 1; content: "Creative Developer";}
+   60% {opacity: .8; content: "Creative Developer";}
    75% {opacity: 0;}
 } 

@@ -17,9 +17,10 @@ interface props {
   appID: any
   index: number
   title: string
+  link: string
 }
 
-export function DockItem({ title = 'hello', mouseX, appID }: props) {
+export function DockItem({ title = 'hello', mouseX, appID, link }: props) {
   const imgRef = useRef<HTMLImageElement>()
 
   const { width } = useDockHoverAnimation(mouseX, imgRef)
@@ -28,7 +29,7 @@ export function DockItem({ title = 'hello', mouseX, appID }: props) {
     <button className={styles.dockItemButton}>
       <p className={styles.tooltip}>{title}</p>
       <motion.span>
-        <Link href={`/${title}`}>
+        <Link href={`/${link}`}>
           <motion.img
             ref={imgRef}
             src={`/app-icons/${appID}/256.png`}

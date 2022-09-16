@@ -15,7 +15,7 @@ function App() {
       </div>
       <div className="bg-slate-600 w-1/3 mt-2 rounded border-2"></div>
       <div className="md:pt-10 pt-4">
-        <p className="text-base font-mono">
+        <p className="text-base font-poppins">
           Web designer and developer from Bangalore, growing a career in tech. I
           create custom websites to help business to do better online. I enjoy
           buiding everything from small business sites to rich interactive web
@@ -42,6 +42,7 @@ function App() {
                 mouseX={mouseX}
                 appID={appID}
                 title={appsConfig[appID].title}
+                link={appsConfig[appID].link}
               />
             </div>
           ))}
