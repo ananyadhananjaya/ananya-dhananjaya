@@ -24,30 +24,6 @@ function App() {
           get in touch with me!
         </p>
       </div>
-
-      <section id="dock" className={styles.container}>
-        <div
-          className={styles.dockEl}
-          onMouseMove={(event) => setMouseX(event.nativeEvent.x)}
-          onMouseLeave={() => setMouseX(null)}
-        >
-          {Object.keys(appsConfig).map((appID, i) => (
-            <div key={appID} className={styles.divider}>
-              {appsConfig[appID].dockBreaksBefore && (
-                <div key={`${appID}-divider`} aria-hidden="true" />
-              )}
-              <DockItem
-                index={i}
-                key={appID}
-                mouseX={mouseX}
-                appID={appID}
-                title={appsConfig[appID].title}
-                link={appsConfig[appID].link}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }
