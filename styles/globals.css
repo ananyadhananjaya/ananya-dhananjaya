@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-color: rgb(248 250 252);
+}
+
 .dock-container {
     margin-bottom: 0.3rem;
     left: 0;
