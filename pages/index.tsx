@@ -1,17 +1,8 @@
-import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { DockItem } from './components/dockItem'
-import { appsConfig } from './components/data/apps/apps-config'
-import styles from '../styles/Index.module.scss'
-
 function App() {
-  const [mouseX, setMouseX] = useState<any>(null)
-
   return (
     <div className="mx-auto h-screen text-3xl text-slate-500 px-20">
       <div className="md:pt-32 pt-10">
         <p className="text-4xl font-mono">Ananya Dhananjaya</p>
-        <p className={styles.header}></p>
       </div>
       <div className="bg-slate-600 w-1/3 mt-2 rounded border-2"></div>
       <div className="md:pt-10 pt-4">
