@@ -1,4 +1,15 @@
+import { useEffect } from 'react'
+
 function App() {
+  useEffect(() => {
+    document.addEventListener('visibilityChange', () => {
+      if (document.visibilityState === 'visible') {
+        document.title = 'Ananya Dhananjaya'
+      } else {
+        document.title = 'Come Back To Portfolio'
+      }
+    })
+  }, [])
   return (
     <div className="mx-auto h-screen text-3xl text-slate-500 px-20">
       <div className="md:pt-32 pt-10">
